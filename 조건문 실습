@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. 사용자에게 색상 입력받기(빨강,초록,파랑) prompt() 
+        let color = prompt("색깔을 적어주세요");
+
+        // 2. 입력한값이 빨강인 경우에는 배경색을 빨강색으로
+        // 3. 파랑인 경우에는 배경색을 파란색으로
+        // 4. 초록인 경우에는 배경색을 초록색으로!
+        //* 배경색 바꾸는 코드는 ex01기초에 색상변경 js코드 참고!
+        if(color == "빨강") {
+            console.log(document.getElementsByTagName("body")[0].style.backgroundColor = "red");
+        }else if(color == "초록") {
+            console.log(document.getElementsByTagName("body")[0].style.backgroundColor = "green");
+        }else {
+            console.log(document.getElementsByTagName("body")[0].style.backgroundColor = "blue");
+        }
+    </script>
+</body>
+</html>
