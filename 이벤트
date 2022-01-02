@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1 class ="txt"> 저를 변경해주세요~ </h1>
+    <h1 class ="txt"> 저를 변경해주세요~ </h1>
+    
+    <script>
+        // 1. 제이쿼리에서 이벤트를 부여하는 방법
+        // $("요소").on("어떤이벤트인지","어떤 기능을 실행시킬지")
+        $(".txt").on("mouseover", function(){
+
+        // h1태그 위에 마우스를 올렸을때 글자색을 파란색으로 변경
+        $(this).css("color","blue");
+        })
+
+        $(".txt").on("mouseout", function(){
+
+        // h1태그 위에 마우스를 올렸을때 글자색을 파란색으로 변경
+        $(this).css("color","black");
+        })
+
+    </script>
+</body>
+</html>
