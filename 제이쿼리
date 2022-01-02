@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <p id = "txt"> 제이쿼리 사용법~ </p>
+
+    <script>
+        // jquery 기초 요소를 접근 $("선택자")
+        // 요소안에 있는 텍스트 .text() / .html()
+        // 데이터를 수정할때는 .text("매개변수로 수정");
+        //alert($("#txt").text());
+        //$("#txt").text("수정할데이터");
+
+        // 디자인 수정
+        // $("요소").css("속성", "속성값");
+        //$("#txt").css("color","red");
+        //$("#txt").css("font-size","100px");
+
+        // 디자인의 다중처리
+        $("#txt").css({
+            color : "red",
+            fontsize : "100px"
+
+        });
+
+    </script>
+</body>
+</html>
