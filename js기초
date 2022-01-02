@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 표현식 단축: ul>li*3 -->
+    <!--     <ul>
+                <li> 
+                <li> 
+                <li>
+             </ul> -->
+        <a href = #> Front-end Developer</a>
+    <br>
+    <br>
+    <button id = "btn"> DESIGN </button>
+    <button id = "bts"> DEFAULT </button>
+
+    <ul>
+        <li> HTML </li>
+        <li> CSS </li>
+        <li> Javascript </li>
+    </ul>
+
+    <h1> Javascript </h1>
+    <p> 
+        Javascript는 웹 페이지를 동적인 웹페이지로 만들기 위해 고안된 언어입니다.
+        <br>
+        차근차근 Javascript에 대해서 배워보도록 합시다. 
+    </p>
+
+    <script>
+        // 자바스크립트를 적기위한 공간
+        // 디자인버튼을 클릭했을떄 배경색은 노란색으로, 글자색은 파란색으로 변경!
+        document.getElementById("btn").addEventListener("click", function(){
+            // 클릭을 했을때 실행되는 부분
+            document.getElementsByTagName("body")[0].style.color = "blue";
+            document.getElementsByTagName("body")[0].style.backgroundColor = "yellow";
+        })
+    </script>
+
+</body>
+</html>
