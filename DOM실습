@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id = "txt"> 0 </p>
+    <button onclick="addNum()"> +1증가 </button>
+    <button onclick="minusNum()"> -1감소 </button>
+
+    <script>
+
+        // 1. +1증가버튼을 클릭했을 때 p태그 안에있는 글자를 가지고와서
+       // 숫자로 바꾼다음에 +1증가
+       // 증가한값을 화면에 보여주기!
+       
+        function addNum() {
+        document.getElementById("txt").innerText = Number(document.getElementById("txt").innerText) +1;
+        }
+
+        // 2. +1감소버튼을 클릭했을 때 p태그 안에있는 글자를 가지고와서
+       // 숫자로 바꾼다음에 -1증가
+       // 감소한값을 화면에 보여주기!
+       // *0인경우에는 더이상 감소하지 않게!
+
+        function minusNum() {
+            if ( Number(document.getElementById("txt").innerText) > 0) {
+            document.getElementById("txt").innerText = Number(document.getElementById("txt").innerText) -1;
+            }
+        } 
+       
+    
+     
+    </script>
+</body>
+</html>
