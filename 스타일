@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="txt"> 첫눈 보고 싶어요~ </p>
+    <button id = "btn"> 스타일 변경</button>
+    
+    <script>
+        // 버튼을 클릭했을때 스타일 변경!
+        // addEventListner("어떤 이벤트", "어떤걸 실행시킬지") > 원하는 요소에 이벤트를 부여하는 방법()
+        document.getElementById("btn").addEventListener("click", function() {
+            // 스타일을 제어할때는 .style."속성" = "바꿀값";
+            document.getElementById("txt").style.color = "red";
+        })
+
+    </script>
+</body>
+</html>
