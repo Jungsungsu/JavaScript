@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "txt"> 집에가고싶다! </p>
+    <button onclick="setTxt()"> 글자출력! </button>
+
+    <script>
+        // 1. 함수를 제작
+        // 내가 보고 있는 문서에서 id가 txt요소를 들고와서 그 안에있는 글자좀 출력해줘
+        function getTxt() {
+            // 요소에 접근하는 방법
+            // document.getElement 명령을 통해서 접근
+            // 들고온 요소 안에있는 콘텐츠(내용)을 출력할려면 innerText
+            alert(document.getElementById("txt").innerText);
+        }
+        
+        // 2. 함수제작
+        // 가지고온 글자를 수정하기 
+         function setTxt() {
+             // 요소 안에있는 콘텐츠(내용)을 수정할려면 = "바꿀값" 으로 수정이 가능!
+            document.getElementById("txt").innerHTML = "<h1>집에 진짜로 가고싶어요!</h1>";
+        }
+
+        // 글자를 가지고오는건 innerHTML VS innerText
+        // innerHTML : 태그정보를 인식해서 태그를 실행
+        // innerText : 태그정보를 인식하지 못한다. 그냥 텍스트로 출력
+
+    </script>
+</body>
+</html>
