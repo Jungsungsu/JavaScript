@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "txt">p태그 데이터</p>
+    <button onclick="pTag()"> p태그 콘텐츠 가지고오기 </button>
+    <br>
+    <input type="text" id = "inputTxt">
+    <br>
+    <button onclick="inputTag()"> input태그 콘텐츠 가지고오기 </button>
+
+    <script>
+        function pTag() {
+            alert(document.getElementById("txt").innerText);
+        }
+
+        function inputTag() {
+
+            // input태그는 innerHTML, innerText 사용할수가 없다.
+            // 이유 : inner~ 열린태그와 닫는태그 사이에있는 콘텐츠(내용)을 가지고오는 속성
+            // input태그는 열린태그만 있는 홀태그 구조, 콘텐츠가 존재하지 않음!
+            // input태그의 데이터를 저장하는 공간은 value 속성에 저장
+            alert(document.getElementById("inputTxt").value);
+        }
+
+    </script>
+</body>
+</html>
