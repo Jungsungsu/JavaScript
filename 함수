@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="addNum(1,5)"> 더하기 기능 호출! </button>
+ 
+    <script>
+        // 함수를 제작할때는 function 키워드를 작성 함수명()
+        // 실제 돌아가는 로직은 {} 작성!
+        function addNum(num1,num2) {
+            // 실제 돌아갈 로직!
+            alert(num1 + num2);
+        }
+
+        // addNum(1,5);
+
+        function minusNum(num1,num2) {
+            return(num1 - num2);
+        }
+
+        let res = minusNum(10,5);
+        alert(res);
+    </script>
+</body>
+</html>
