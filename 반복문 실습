@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // 1. 사용자에게 시작하는 숫자를 입력 prompt()
+        //* 내가 필요한 데이터는 숫자형태의 데이터가 필요 Number()
+        let num1 = Number(prompt("시작하는 숫자를 입력하세요"));
+        // 2. 사용자에게 끝나는 숫자를 입력 prompt()
+        //* 내가 필요한 데이터는 숫자형태의 데이터가 필요 Number()
+        let num2 = Number(prompt("끝나는 숫자를 입력하세요"));
+        // 3. 반복문 for문을 활용해서 콘솔창에 숫자의 합을 출력
+        // for(let i = 0 ;;;)
+        let sum = 0;
+
+        for(let i = num1; i<=num2; i++) {
+            // 값을 더해서 누적시키는 로직을 작성한 공간
+            sum += i;
+        }
+        
+        console.log(sum);
+
+
+    </script>
+</body>
+</html>
