@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        // 1. HTML문서에 직접 출력하는 document.write()
+        document.write("<h1>안녕하세요~</h1>");
+
+        // 2. console창에 데이터를 출력하는 방법 console.log() ★
+        // 보통 데이터 통신이 잘 이루어지고 있는지 (값을 확인할때)
+        console.log("콘솔창 출력!");l
+        
+        // 3. 팝업창을 통해서 데이터를 출력하는 방법 alert() ★
+        alert("팝업창");
+
+    </script>
+
+</body>
+</html>
