@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img id = "img1" src = "https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20210416_132%2F1618547899577bLqIj_JPEG%2F100339_1.jpg&type=a340">
+    <br>
+    <br>
+    <button onclick = "img()"> 이미지 변경 </button>
+    <script>
+        function img() {
+            // 클릭했을때 img태그의 src값을 수정하는 부분
+            document.getElementById("img1").src = "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTExMTBfODAg%2FMDAxNjM2NTQ1MjM4OTI1.C7q5Q86v2Ev2G9dY01Tsf20KetM0SUdi0JDq1zutXWwg.OvCrENl6kSgaEZ_lL7eIJTl0AMF7gEX750Mk2n2nHuog.PNG.lzzixdjg1%2Fbaae416dc-db4b-4708-a66d-4292c8a057d3.png&type=a340"
+        }
+    </script>
+</body>
+</html>
